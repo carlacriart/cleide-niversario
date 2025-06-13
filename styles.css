@@ -58,26 +58,25 @@ h2 {
 
 /* Estilos para o GIF ou Vídeo principal */
 #video {
-  width: 100%;
-  padding: 20px 0;              /* Espaçamento vertical leve */
-  background-color: #f4f7f6;    /* Mesmo fundo do site */
+  padding: 0;                  /* Remove espaçamento interno */
+  margin: 0 auto;              /* Centraliza */
+  background-color: transparent; /* Evita manchas brancas */
   display: flex;
   justify-content: center;
   align-items: center;
-}
+
 }
 
 .imagem-video {
-    width: 100%;
-    max-width: 100px;      /* limite de largura para desktop */
-    height: auto;          /* evita esticar verticalmente */
-    max-height: 100px;     /* NOVO: limita altura da área do vídeo */
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover;     /* Preenche proporcionalmente sem estourar */
-    background-color: #000; /* Previne "área branca" se vídeo não carregar */
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 250px; /* Reduz a altura visível */
+  object-fit: cover;
+  background-color: #000; /* evita fundo branco antes de carregar */
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
 
 }
 
