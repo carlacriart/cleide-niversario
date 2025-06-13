@@ -69,13 +69,16 @@ h2 {
 }
 
 .imagem-video {
-  width: 100%;
-  max-width: 600px; /* limita largura */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  display: block;
+    width: 100%;
+    max-width: 500px;      /* limite de largura para desktop */
+    height: auto;          /* evita esticar verticalmente */
+    max-height: 300px;     /* NOVO: limita altura da área do vídeo */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;     /* Preenche proporcionalmente sem estourar */
+    background-color: #000; /* Previne "área branca" se vídeo não carregar */
 
 }
 
@@ -140,9 +143,15 @@ h2 {
 
 /* Responsividade para celular */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
+  .imagem-video {
+    width: 95%;
+    max-height: 200px;
+  }
+
+  .imagem {
+    width: 95%;
+  }
+
     }
 
     .imagem-gif, .imagem-video {
