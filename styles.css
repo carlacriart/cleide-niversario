@@ -11,44 +11,41 @@ body {
 
 /* Estilo para o áudio de fundo */
 audio {
-    position: fixed; /* Fixa o áudio no fundo da página */
-    bottom: 10px;    /* Coloca a barra de controle no rodapé da página */
+    position: fixed;
+    bottom: 10px;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza a barra na horizontal */
-    z-index: 1000;  /* Garante que o áudio ficará acima de outros elementos */
-    width: 80%; /* Ajusta o tamanho da barra de áudio */
-    max-width: 500px; /* Define a largura máxima para a barra de áudio */
-    border-radius: 25px; /* Faz as bordas do controle do áudio arredondadas */
-    background-color: #fff; /* Cor de fundo do controle */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo do botão de áudio */
+/* Estilo dos controles do áudio (compatível com WebKit) */
 audio::-webkit-media-controls {
-    border-radius: 25px; /* Torna os controles arredondados */
+    border-radius: 25px;
 }
 
 audio::-webkit-media-controls-panel {
-    background-color: #ff6347; /* Cor de fundo dos controles */
-    border-radius: 25px; /* Bordas arredondadas nos controles */
+    background-color: #ff6347;
+    border-radius: 25px;
 }
 
-/* Estilo do botão de play e outros controles do áudio */
 audio::-webkit-media-controls-play-button {
-    background-color: #fff; /* Cor do botão de play */
-    border-radius: 50%; /* Torna o botão de play arredondado */
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 audio::-webkit-media-controls-volume-slider {
-    background-color: #ff6347; /* Cor do controle de volume */
-    border-radius: 5px; /* Bordas arredondadas para o controle de volume */
-}
-
+    background-color: #ff6347;
+    border-radius: 5px;
 }
 
 /* Títulos principais */
 h1, h2 {
-    color: #ff6347; /* Cor de laranja-avermelhado */
+    color: #ff6347;
     margin-top: 20px;
 }
 
@@ -59,7 +56,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Estilos para o GIF ou Vídeo */
+/* Estilos para o GIF ou Vídeo principal */
 #video {
     position: relative;
     width: 100%;
@@ -78,7 +75,7 @@ h2 {
     border-radius: 10px;
 }
 
-/* Estilos gerais para todos os irmãos */
+/* Estilos para os irmãos */
 .irmao {
     background-color: #fff;
     padding: 20px;
@@ -127,6 +124,7 @@ h2 {
     transform: scale(1.05);
 }
 
+/* Reaplicando estilo geral para mídias */
 .imagem-gif, .imagem-video {
     width: 100%;
     height: auto;
@@ -136,7 +134,7 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividade */
+/* Responsividade para celular */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -144,11 +142,17 @@ h2 {
     }
 
     .imagem-gif, .imagem-video {
-        width: 90%;
+        width: 100%;
+        height: auto;
     }
 
     .imagem {
-        width: 90%;
+        width: 95%;
+        height: auto;
+    }
+
+    audio {
+        width: 95%;
     }
 }
 
@@ -163,7 +167,7 @@ button {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s;
