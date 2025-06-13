@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surpresa de Aniversário - Cleide</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script> <!-- Biblioteca de Confetes -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
 </head>
 <body>
-    <!-- Música de fundo (áudio secundário) -->
+
+<!-- Música de fundo (áudio secundário) -->
 <audio autoplay loop controls>
     <source src="media/audio1.mp3" type="audio/mp3">
     Seu navegador não suporta o elemento de áudio.
@@ -16,29 +17,30 @@
 
 <!-- Botão de Download para a Música -->
 <div class="download-section">
-    <a href="audio1.mp3" download="cleide-almeida.mp3">
+    <a href="media/audio1.mp3" download="cleide-almeida.mp3">
         <button class="download-button">Baixar Música</button>
     </a>
 </div>
 
-   <header>
-        <h1>Feliz Aniversário, Cleide!</h1>
-        <p>Preparamos uma surpresa muito especial para você, com mensagens dos irmãos, fotos e vídeos. Confira abaixo!</p>
-    </header>
+<header>
+    <h1>Feliz Aniversário, Cleide!</h1>
+    <p>Preparamos uma surpresa muito especial para você, com mensagens dos irmãos, fotos e vídeos. Confira abaixo!</p>
+</header>
 
-    <section id="video">
-  <video autoplay muted loop playsinline class="imagem-video">
-    <source src="video1.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo.
-  </video>
+<!-- Vídeo principal -->
+<section id="video">
+    <video autoplay muted loop playsinline class="imagem-video">
+        <source src="media/video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
 </section>
 
-
+<!-- Irmãos -->
 <section id="Irmão1">
     <h2>Homenagem de Cida</h2>
     <div class="container">
         <div class="foto">
-            <img src="Cida.jpeg" class="imagem" alt="Foto de Cida">
+            <img src="media/Cida.jpeg" class="imagem" alt="Foto de Cida">
         </div>
         <div class="mensagem">
             <h3>
@@ -61,14 +63,12 @@
     <h2>Homenagem de Carminha</h2>
     <div class="container">
         <div class="foto">
-            <img src="Carminha.jpeg" class="imagem" alt="Foto de Cida">
+            <img src="media/Carminha.jpeg" class="imagem" alt="Foto de Carminha">
         </div>
         <div class="mensagem">
             <h3>
                 Que os anos que se somam façam parte de uma infinita conta de novas experiências para crescer e aprender a viver cada vez melhor.
-Feliz Aniversário!🍾🥂
-Te amo❤️ <br><br>
-                Feliz aniversário!
+                Feliz Aniversário!🍾🥂 Te amo❤️ <br><br>
             </h3>
         </div>
     </div>
@@ -78,58 +78,60 @@ Te amo❤️ <br><br>
     <h2>Homenagem de Creusa</h2>
     <div class="container">
         <div class="foto">
-            <img src="Creusa.jpeg" class="imagem" alt="Foto de Cida">
+            <img src="media/Creusa.jpeg" class="imagem" alt="Foto de Creusa">
         </div>
         <div class="mensagem">
             <h3>
-                Minha querida irmã Creide Maria 😍 
-Como não Louvar a Deus pelo dom de sua vida ...🙏 
-Desde pequena você sempre demonstra sua alegria pela vida nos seus cuidados com você e com tudo à sua volta ...😍
-Sua dedicação no dia a dia é exemplo para todos nós: de superação em enfrentar tudo com Amor... ❤️ <br>
-Porque confia em Deus que é Pai e nele você tudo pôde...🙏🎉
-Que nesse dia que Deus escolheu para você seja um dia de muitas Bençãos, Paz e Felicidades...🙏❤️ <br>
-Que Nossa Senhora Aparecida te cubra com seu Manto Sagrado e que você continue essa Benção para todos nós...🙏📿 <br>
-Feliz Aniversário...🎉
-💝🌺🌻🪻🪷🌸🌾🪴🌹<br>
-Pedrão e Cleusa Maria 💞🎊
-🎈🎈🎈🎈🎈🎈🎈🎈🎈<br>
-Te amo❤️ <br><br>
-                Feliz aniversário!
-            </h3>
-        </div>
-    </div>
-</section>
-<section id="Irmão4">
-    <h2>Homenagem de Antônio Carlos</h2>
-    <div class="container">
-        <div class="video">
-            <video controls>
-            <source src="video2.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
-        </div>
-        <div class="mensagem">
-            <h3>
-                Feliz aniversário, Cleide! ❤️ <br><br> 
-Mesmo com a distância, meu amor de irmão por você é imenso e inabalável. <br>
-Você é linda — por fora e, principalmente, por dentro. O seu cuidado com as plantas, as flores e a família me encanta e inspira. Sempre oro para que você tenha uma felicidade plena, junto de todos que você ama.<br><br>
-Te amo muito!<br><br>
-Elza te manda beijos e abraços. <br><br>
-                Feliz aniversário!
+                Minha querida irmã Creide Maria 😍 <br>
+                Como não Louvar a Deus pelo dom de sua vida ...🙏 <br>
+                Desde pequena você sempre demonstra sua alegria pela vida nos seus cuidados com você e com tudo à sua volta ...😍<br>
+                Sua dedicação no dia a dia é exemplo para todos nós: de superação em enfrentar tudo com Amor... ❤️<br>
+                Porque confia em Deus que é Pai e nele você tudo pôde...🙏🎉<br>
+                Que nesse dia que Deus escolheu para você seja um dia de muitas Bençãos, Paz e Felicidades...🙏❤️<br>
+                Que Nossa Senhora Aparecida te cubra com seu Manto Sagrado e que você continue essa Benção para todos nós...🙏📿<br>
+                Feliz Aniversário...🎉<br>
+                💝🌺🌻🪻🪷🌸🌾🪴🌹<br>
+                Pedrão e Cleusa Maria 💞🎊<br>
+                🎈🎈🎈🎈🎈🎈🎈🎈🎈<br>
+                Te amo❤️
             </h3>
         </div>
     </div>
 </section>
 
+<section id="Irmão4">
+    <h2>Homenagem de Antônio Carlos</h2>
+    <div class="container">
+        <div class="video">
+            <video controls class="imagem-video">
+                <source src="media/video2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="mensagem">
+            <h3>
+                Feliz aniversário, Cleide! ❤️ <br><br>
+                Mesmo com a distância, meu amor de irmão por você é imenso e inabalável. <br>
+                Você é linda — por fora e, principalmente, por dentro. O seu cuidado com as plantas, as flores e a família me encanta e inspira. <br>
+                Sempre oro para que você tenha uma felicidade plena, junto de todos que você ama. <br><br>
+                Te amo muito!<br><br>
+                Elza te manda beijos e abraços.
+            </h3>
+        </div>
+    </div>
+</section>
 
 <section id="Irmão5">
     <h2>Homenagem de Vicente</h2>
     <div class="container">
         <div class="foto">
-            <img src="Vicente.jpeg" class="imagem" alt="Foto de Cida">
+            <img src="media/Vicente.jpeg" class="imagem" alt="Foto de Vicente">
         </div>
         <div class="mensagem">
             <h3>
-                Cleide! Feliz Aniversário, Parabéns!<br><br> Que este novo ciclo que inicia seja cheio de realizações, novas conquistas e felicidades mil!<br><br> Beijos! Vicente e Marisa...❤️🙏🏻🎂🎁🎉🍾🥂
+                Cleide! Feliz Aniversário, Parabéns!<br><br>
+                Que este novo ciclo que inicia seja cheio de realizações, novas conquistas e felicidades mil!<br><br>
+                Beijos! Vicente e Marisa...❤️🙏🏻🎂🎁🎉🍾🥂
             </h3>
         </div>
     </div>
@@ -139,11 +141,13 @@ Elza te manda beijos e abraços. <br><br>
     <h2>Homenagem de Neusa</h2>
     <div class="container">
         <div class="foto">
-            <img src="Neusa.jpeg" class="imagem" alt="Foto de Cida">
+            <img src="media/Neusa.jpeg" class="imagem" alt="Foto de Neusa">
         </div>
         <div class="mensagem">
             <h3>
-                Cleide! Hoje é o seu dia, é um grande dia❤️🙏🏻.<br><br>  Dias e anos se passaram e você continua especial e querida por todos que a conhecem e a admiram.Feliz Aniversário, Parabéns!<br><br> ❤️🙏🏻🎂🎁🎉🍾🥂
+                Cleide! Hoje é o seu dia, é um grande dia❤️🙏🏻.<br><br>
+                Dias e anos se passaram e você continua especial e querida por todos que a conhecem e a admiram.<br>
+                Feliz Aniversário, Parabéns! ❤️🙏🏻🎂🎁🎉🍾🥂
             </h3>
         </div>
     </div>
@@ -152,18 +156,16 @@ Elza te manda beijos e abraços. <br><br>
 <section id="Irmão7">
     <h2>Homenagem de Seus Amores</h2>
     <div class="container">
-        <!-- Primeira div para o primeiro vídeo -->
         <div class="video">
             <video autoplay muted loop class="imagem-video">
-                <source src="video3.mp4" type="video/mp4">
+                <source src="media/video3.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </div>
 
-        <!-- Segunda div para o segundo vídeo -->
         <div class="video">
             <video autoplay muted loop class="imagem-video">
-                <source src="video4.mp4" type="video/mp4">
+                <source src="media/video4.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </div>
@@ -171,17 +173,19 @@ Elza te manda beijos e abraços. <br><br>
 </section>
 
 <footer>
-        <p>Esperamos que você tenha gostado da surpresa, Cleide! ❤️</p>
-    </footer>
+    <p>Esperamos que você tenha gostado da surpresa, Cleide! ❤️</p>
+</footer>
 
-    <script>
-        window.onload = function() {
-            // Explosão de confetes
-            confetti({
-                particleCount: 200,  // Quantidade de confetes
-                spread: 70,  // Largura da explosão
-                origin: { y: 0.6 },  // A posição de origem da explosão
-                colors: ['#ff0', '#ff6347', '#32cd32', '#1e90ff', '#ff1493']  // Cores dos confetes
-            });
-        };
-    </script>
+<script>
+    window.onload = function () {
+        confetti({
+            particleCount: 200,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#ff0', '#ff6347', '#32cd32', '#1e90ff', '#ff1493']
+        });
+    };
+</script>
+
+</body>
+</html>
