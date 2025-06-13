@@ -69,7 +69,7 @@ h2 {
 
 .imagem-video {
     width: 100%;
-    max-width: 500px;      /* limite de largura para desktop */
+    max-width: 100px;      /* limite de largura para desktop */
     height: auto;          /* evita esticar verticalmente */
     max-height: 100px;     /* NOVO: limita altura da área do vídeo */
     display: block;
