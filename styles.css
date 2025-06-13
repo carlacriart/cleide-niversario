@@ -56,31 +56,31 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Estilos para o GIF ou Vídeo principal */
+/* Estilo da seção do vídeo */
 #video {
-  padding: 0;                  /* Remove espaçamento interno */
-  margin: 0 auto;              /* Centraliza */
-  background-color: transparent; /* Evita manchas brancas */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Estilo do vídeo em si */
 .imagem-video {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  max-height: 250px; /* Reduz a altura visível */
-  object-fit: cover;
-  background-color: #000; /* evita fundo branco antes de carregar */
-  display: block;
-  border-radius: 10px;
-  margin: 0 auto;
-
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    background-color: #000;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para os irmãos */
+/* Estilo geral para seções dos irmãos */
 .irmao {
     background-color: #fff;
     padding: 20px;
@@ -129,37 +129,20 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Reaplicando estilo geral para mídias */
-.imagem-gif, .imagem-video {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 8px;
-    border: 2px solid #1e90ff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Responsividade para celular */
 @media (max-width: 768px) {
-  .imagem-video {
-    width: 95%;
-    max-height: 200px;
-  }
-
-  .imagem {
-    width: 95%;
-  }
-
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .imagem-gif, .imagem-video {
-        width: 100%;
-        height: auto;
+    .imagem-video {
+        width: 95%;
+        max-height: 200px;
     }
 
     .imagem {
         width: 95%;
-        height: auto;
     }
 
     audio {
